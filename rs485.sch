@@ -1,0 +1,375 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title "Vaccum Control for Scattering Chamber"
+Date "2022-03-08"
+Rev "2.0"
+Comp "Ruhr-Universität Bochum, AG der Experimentalphysik I"
+Comment1 "Florian Feldbauer"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 5FBC82BE
+P 6750 2750
+AR Path="/5FCE2A38/5FBC82BE" Ref="C?"  Part="1" 
+AR Path="/5FBA8F79/5FBC82BE" Ref="C7"  Part="1" 
+F 0 "C7" H 6865 2796 50  0000 L CNN
+F 1 "10n" H 6865 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6788 2600 50  0001 C CNN
+F 3 "~" H 6750 2750 50  0001 C CNN
+F 4 "C0603C103K5RACAUTO" H 6750 2750 50  0001 C CNN "MPN"
+F 5 "Kemet" H 6750 2750 50  0001 C CNN "Manufacturer"
+	1    6750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5FBC82C4
+P 4000 3600
+F 0 "C5" H 4115 3646 50  0000 L CNN
+F 1 "10u" H 4115 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4038 3450 50  0001 C CNN
+F 3 "~" H 4000 3600 50  0001 C CNN
+F 4 "GRM188R61A106KE69D" H 4000 3600 50  0001 C CNN "MPN"
+F 5 "Murata" H 4000 3600 50  0001 C CNN "Manufacturer"
+	1    4000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5FBC82CA
+P 4450 3600
+F 0 "C6" H 4565 3646 50  0000 L CNN
+F 1 "100n" H 4565 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4488 3450 50  0001 C CNN
+F 3 "~" H 4450 3600 50  0001 C CNN
+F 4 "C0603C104K5RACAUTO" H 4450 3600 50  0001 C CNN "MPN"
+F 5 "Kemet" H 4450 3600 50  0001 C CNN "Manufacturer"
+	1    4450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5FBC82D0
+P 3550 3600
+F 0 "C4" H 3665 3646 50  0000 L CNN
+F 1 "10n" H 3665 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3588 3450 50  0001 C CNN
+F 3 "~" H 3550 3600 50  0001 C CNN
+F 4 "C0603C103K5RACAUTO" H 3550 3600 50  0001 C CNN "MPN"
+F 5 "Kemet" H 3550 3600 50  0001 C CNN "Manufacturer"
+	1    3550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FBC82D6
+P 3100 3600
+F 0 "C3" H 3215 3646 50  0000 L CNN
+F 1 "100n" H 3215 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3138 3450 50  0001 C CNN
+F 3 "~" H 3100 3600 50  0001 C CNN
+F 4 "C0603C104K5RACAUTO" H 3100 3600 50  0001 C CNN "MPN"
+F 5 "Kemet" H 3100 3600 50  0001 C CNN "Manufacturer"
+	1    3100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3450 3550 3450
+Connection ~ 3100 3450
+Wire Wire Line
+	4000 3450 3550 3450
+Connection ~ 3550 3450
+Wire Wire Line
+	4000 3450 4450 3450
+Connection ~ 4000 3450
+Wire Wire Line
+	4450 3450 4750 3450
+Connection ~ 4450 3450
+Wire Wire Line
+	4450 3750 4000 3750
+Wire Wire Line
+	4000 3750 3550 3750
+Connection ~ 4000 3750
+Wire Wire Line
+	3550 3750 3100 3750
+Connection ~ 3550 3750
+Connection ~ 3100 3750
+$Comp
+L Device:C C9
+U 1 1 5FBC82FA
+P 7200 2750
+F 0 "C9" H 7315 2796 50  0000 L CNN
+F 1 "100n" H 7315 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7238 2600 50  0001 C CNN
+F 3 "~" H 7200 2750 50  0001 C CNN
+F 4 "C0603C104K5RACAUTO" H 7200 2750 50  0001 C CNN "MPN"
+F 5 "Kemet" H 7200 2750 50  0001 C CNN "Manufacturer"
+	1    7200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5FBC8300
+P 7650 2750
+F 0 "C10" H 7765 2796 50  0000 L CNN
+F 1 "10u" H 7765 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7688 2600 50  0001 C CNN
+F 3 "~" H 7650 2750 50  0001 C CNN
+F 4 "GRM188R61A106KE69D" H 7650 2750 50  0001 C CNN "MPN"
+F 5 "Murata" H 7650 2750 50  0001 C CNN "Manufacturer"
+	1    7650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5FBC8306
+P 8100 2750
+F 0 "C11" H 8215 2796 50  0000 L CNN
+F 1 "100n" H 8215 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8138 2600 50  0001 C CNN
+F 3 "~" H 8100 2750 50  0001 C CNN
+F 4 "C0603C104K5RACAUTO" H 8100 2750 50  0001 C CNN "MPN"
+F 5 "Kemet" H 8100 2750 50  0001 C CNN "Manufacturer"
+	1    8100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3750 6200 3750
+Wire Wire Line
+	6200 3450 6650 3450
+Wire Wire Line
+	6750 2600 7200 2600
+Wire Wire Line
+	7200 2600 7650 2600
+Connection ~ 7200 2600
+Wire Wire Line
+	7650 2600 8100 2600
+Connection ~ 7650 2600
+Wire Wire Line
+	5950 3850 6000 3850
+Wire Wire Line
+	5950 4150 6050 4150
+Wire Wire Line
+	5950 3950 6050 3950
+Wire Wire Line
+	6050 3950 6050 4150
+Wire Wire Line
+	5950 4050 6000 4050
+Wire Wire Line
+	6000 4050 6000 3850
+Wire Wire Line
+	4750 4150 4700 4150
+Wire Wire Line
+	4700 4150 4700 3950
+Connection ~ 4700 3950
+Wire Wire Line
+	4700 3950 4750 3950
+$Comp
+L Device:R R8
+U 1 1 5FBC8328
+P 6650 4000
+F 0 "R8" H 6720 4046 50  0000 L CNN
+F 1 "100R" H 6720 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6580 4000 50  0001 C CNN
+F 3 "~" H 6650 4000 50  0001 C CNN
+F 4 "CR0603-JW-101ELF" H 6650 4000 50  0001 C CNN "MPN"
+F 5 "Bourns" H 6650 4000 50  0001 C CNN "Manufacturer"
+	1    6650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FBC832E
+P 6650 4300
+F 0 "R9" H 6720 4346 50  0000 L CNN
+F 1 "680R" H 6720 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6580 4300 50  0001 C CNN
+F 3 "~" H 6650 4300 50  0001 C CNN
+F 4 "CR0603-JW-681ELF" H 6650 4300 50  0001 C CNN "MPN"
+F 5 "Bourns" H 6650 4300 50  0001 C CNN "Manufacturer"
+F 6 "YES" H 6650 4300 50  0001 C CNN "DNP"
+	1    6650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FBC8334
+P 6650 3700
+AR Path="/5FCE2A38/5FBC8334" Ref="R?"  Part="1" 
+AR Path="/5FBA8F79/5FBC8334" Ref="R7"  Part="1" 
+F 0 "R7" H 6720 3746 50  0000 L CNN
+F 1 "680R" H 6720 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6580 3700 50  0001 C CNN
+F 3 "~" H 6650 3700 50  0001 C CNN
+F 4 "CR0603-JW-681ELF" H 6650 3700 50  0001 C CNN "MPN"
+F 5 "Bourns" H 6650 3700 50  0001 C CNN "Manufacturer"
+F 6 "YES" H 6650 3700 50  0001 C CNN "DNP"
+	1    6650 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6200 3450
+Wire Wire Line
+	6000 3850 6650 3850
+Connection ~ 6000 3850
+Connection ~ 6650 3850
+Connection ~ 6650 4150
+Wire Wire Line
+	6650 4150 6050 4150
+Connection ~ 6050 4150
+Text Label 7150 4150 0    50   ~ 0
+RS485-D-
+Text Label 7150 3850 0    50   ~ 0
+RS485-D+
+$Comp
+L Interface_UART:ADM2682E U5
+U 1 1 5FBC8347
+P 5350 3850
+F 0 "U5" H 5350 4517 50  0000 C CNN
+F 1 "ADM2682E" H 5350 4426 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x12.8mm_P1.27mm" H 5350 3300 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADM2682E_2687E.pdf" H 5350 4575 50  0001 C CNN
+F 4 "ADM2682EBRIZ" H 5350 3850 50  0001 C CNN "MPN"
+F 5 "Analog Devices" H 5350 3850 50  0001 C CNN "Manufacturer"
+	1    5350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3850 7950 3850
+Wire Wire Line
+	6650 4150 7950 4150
+Text Label 2800 3450 0    50   ~ 0
++3v3
+Text HLabel 2750 3450 0    50   Input ~ 0
++3v3
+NoConn ~ 8350 4300
+Text HLabel 2750 3750 0    50   Input ~ 0
+GND
+Text Label 4500 4250 0    50   ~ 0
+GND
+Text Label 2800 3750 0    50   ~ 0
+GND
+Wire Wire Line
+	2750 3750 3100 3750
+Wire Wire Line
+	5950 3450 6200 3450
+Text HLabel 8950 4100 2    50   Input ~ 0
+GND1
+Text Label 6250 4450 0    50   ~ 0
+GND1
+Wire Wire Line
+	6200 3450 6200 3750
+Wire Wire Line
+	6650 3550 6650 3450
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FBC8381
+P 6200 3450
+AR Path="/5FCE2A38/5FBC8381" Ref="#FLG?"  Part="1" 
+AR Path="/5FBA8F79/5FBC8381" Ref="#FLG0101"  Part="1" 
+F 0 "#FLG0101" H 6200 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 6200 3623 50  0000 C CNN
+F 2 "" H 6200 3450 50  0001 C CNN
+F 3 "~" H 6200 3450 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+Text Label 6400 2900 0    50   ~ 0
+GND1
+Text Label 6550 3450 2    50   ~ 0
+VISO
+Connection ~ 6750 2900
+Wire Wire Line
+	6750 2900 7200 2900
+Connection ~ 7200 2900
+Wire Wire Line
+	7200 2900 7650 2900
+Connection ~ 7650 2900
+Wire Wire Line
+	7650 2900 8100 2900
+Text Label 6400 2600 0    50   ~ 0
+VISO
+Wire Wire Line
+	6400 2600 6750 2600
+Connection ~ 6750 2600
+Wire Wire Line
+	6400 2900 6750 2900
+Wire Wire Line
+	4500 4250 4750 4250
+Wire Wire Line
+	6150 4450 6150 4250
+Wire Wire Line
+	6150 4250 5950 4250
+Wire Wire Line
+	6150 4450 6650 4450
+Wire Wire Line
+	2750 3450 3100 3450
+Wire Wire Line
+	4750 4050 4450 4050
+Wire Wire Line
+	4450 3850 4750 3850
+Wire Wire Line
+	4450 3950 4700 3950
+Text HLabel 4450 4050 0    50   Output ~ 0
+uart_rx
+Text HLabel 4450 3950 0    50   Input ~ 0
+uart_rts
+Text HLabel 4450 3850 0    50   Input ~ 0
+uart_tx
+$Comp
+L RUB-AG1:M12_5A J6
+U 1 1 5FB79D96
+P 8350 4000
+F 0 "J6" H 8350 3633 50  0000 C CNN
+F 1 "M12_5A" H 8350 3724 50  0000 C CNN
+F 2 "RUB-AG1:CONEC_43-01198" H 8350 4000 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/C152/CONEC_ID16719_43K1A511_D.pdf" H 8350 4000 50  0001 C CNN
+F 4 "43-01198" H 8350 4000 50  0001 C CNN "MPN"
+F 5 "Conec" H 8350 4000 50  0001 C CNN "Manufacturer"
+	1    8350 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9200 3900 9500 3900
+Text HLabel 9500 3900 2    50   Input ~ 0
++24v
+Text Label 9450 3900 2    50   ~ 0
++24v
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5FBC8389
+P 9100 3900
+F 0 "JP1" H 9100 4112 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 9100 4021 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9100 3900 50  0001 C CNN
+F 3 "~" H 9100 3900 50  0001 C CNN
+F 4 "22-28-5027" H 9100 3900 50  0001 C CNN "MPN"
+F 5 "Molex" H 9100 3900 50  0001 C CNN "Manufacturer"
+	1    9100 3900
+	1    0    0    -1  
+$EndComp
+Text Label 8900 4100 2    50   ~ 0
+GND1
+Wire Wire Line
+	8050 3900 7950 3900
+Wire Wire Line
+	7950 3900 7950 3850
+Wire Wire Line
+	8050 4100 7950 4100
+Wire Wire Line
+	7950 4100 7950 4150
+Wire Wire Line
+	8650 3900 9000 3900
+Wire Wire Line
+	8650 4100 8950 4100
+Text Label 8900 4250 2    50   ~ 0
+GND1
+Wire Wire Line
+	8650 4250 8900 4250
+$EndSCHEMATC
